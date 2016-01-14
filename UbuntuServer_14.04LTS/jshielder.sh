@@ -328,8 +328,8 @@ install_nginx_modsecurity(){
   wget https://raw.github.com/JasonGiedymin/nginx-init-ubuntu/master/nginx -O /etc/init.d/nginx
   chmod +x /etc/init.d/nginx
   update-rc.d nginx defaults
-  mkdir /usr/local/nginx/conf/sites-available
-  mkdir /usr/local/nginx/conf/sites-enabled
+  mkdir -p /usr/local/nginx/conf/sites-available
+  mkdir -p /usr/local/nginx/conf/sites-enabled
   say_done
 }
   ##############################################################################################################
